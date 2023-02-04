@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>DNS Blocking</title>
+  <link rel="stylesheet" href="stylesheets/main.css">
+</head>
+<body>
+	<h1>DNS Blocking Control</h1>
+	<br>
+	<script>
+		fetch("current.json")
+			.then(response => response.json())
+			.then(data => {
+				console.log(data.status)
+				document.querySelector("#current-status").innerText = data.status
+			})
+	</script>
+	<br>
+	<br>
+	<br>
+	<div id="current-status"></div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<button class="button-44" onclick="location.href='/block'" role="button">Block sites</button>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<button class="button-green" onclick="location.href='/allow'" role="button">Allow sites</button>
+</body>
+</html>
